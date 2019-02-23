@@ -4,10 +4,9 @@ env:
   jest/globals: true
 parser: babel-eslint
 extends: 
-  - 'eslint:recommended'
+  - 'airbnb-base'
   - 'plugin:react/recommended'
   - 'plugin:jsx-a11y/recommended'
-  - 'airbnb-base'
 parserOptions:
   ecmaFeatures:
     jsx: true
@@ -35,4 +34,4 @@ rules:
     - always
 settings:
   react:
-    version: 16.8.2
+    version: 16.8.3
