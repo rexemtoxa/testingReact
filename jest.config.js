@@ -3,7 +3,7 @@ module.exports = {
   snapshotSerializers: [
     'enzyme-to-json/serializer',
   ],
-  setupFilesAfterEnv: ['./setupTests.js'],
+  setupFilesAfterEnv: ['./node_modules/jest-enzyme/lib/index.js'],
   testEnvironment: 'enzyme',
   testEnvironmentOptions: {
     enzymeAdapter: 'react16',

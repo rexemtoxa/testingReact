@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`click1 1`] = `
+exports[`snapshot testing to toggle tab 1`] = `
 <div
   class="react-tabs"
   data-tabs="true"
@@ -52,7 +52,7 @@ exports[`click1 1`] = `
 </div>
 `;
 
-exports[`click1 2`] = `
+exports[`snapshot testing to toggle tab 2`] = `
 <div
   class="react-tabs"
   data-tabs="true"
