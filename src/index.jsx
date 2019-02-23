@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import TabsConstructor from './TabsConstructor';
+import App from './component/App';
 
 ReactDOM.render(
-  <TabsConstructor />,
+  <App />,
   document.getElementById('root'),
 );
 

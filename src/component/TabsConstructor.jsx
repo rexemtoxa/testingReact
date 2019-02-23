@@ -1,18 +1,20 @@
 import React from 'react';
-// eslint-disable-next-line object-curly-newline
-import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
+import {
+  Tab, Tabs, TabList, TabPanel,
+} from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 
+Tab.tabsRole = 'Tab';
 
 const TabsConstructor = () => (
   <Tabs>
     <TabList>
-      <Tab>Title 1</Tab>
-      <Tab>Title 2</Tab>
+      <Tab data-test="tab-anchor"> 1 </Tab>
+      <Tab data-test="tab-anchor"> 2 </Tab>
     </TabList>
 
     <TabPanel>
-      <h2>Any content 2</h2>
+      <h2>Any content 1</h2>
     </TabPanel>
     <TabPanel>
       <h2>Any content 2</h2>

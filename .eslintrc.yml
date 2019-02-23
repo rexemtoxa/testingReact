@@ -18,20 +18,12 @@ plugins:
   - babel
   - jest
 rules:
-  indent:
-    - error
-    - 2
-  import/no-unresolved: off
   react/prop-types: off
-  linebreak-style:
-    - error
-    - unix
-  quotes:
-    - error
-    - single
-  semi:
-    - error
-    - always
 settings:
   react:
     version: 16.8.3
+  import/resolver:
+    node:
+      extensions:
+        - .js
+        - .jsx
