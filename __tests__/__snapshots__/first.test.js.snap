@@ -1,105 +1,327 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`snapshot testing to toggle tab 1`] = `
-<div
-  class="react-tabs"
-  data-tabs="true"
->
-  <ul
-    class="react-tabs__tab-list"
-    role="tablist"
-  >
-    <li
-      aria-controls="react-tabs-1"
-      aria-disabled="false"
-      aria-selected="true"
-      class="react-tabs__tab react-tabs__tab--selected"
-      data-test="tab-anchor"
-      id="react-tabs-0"
-      role="tab"
-      tabindex="0"
+<div>
+  <form>
+    <label
+      for="titleNewTab"
     >
-       1 
-    </li>
-    <li
-      aria-controls="react-tabs-3"
-      aria-disabled="false"
-      aria-selected="false"
-      class="react-tabs__tab"
-      data-test="tab-anchor"
-      id="react-tabs-2"
-      role="tab"
+      enter the name of new tab  
+    </label>
+    <input
+      id="titleNewTab"
+      placeholder="name"
+      type="text"
+      value=""
+    />
+    <button
+      data-test="addTab"
+      type="submit"
     >
-       2 
-    </li>
-  </ul>
+      add Tab
+    </button>
+  </form>
   <div
-    aria-labelledby="react-tabs-0"
-    class="react-tabs__tab-panel react-tabs__tab-panel--selected"
-    id="react-tabs-1"
-    role="tabpanel"
+    data-test="tabBox"
   >
-    <h2>
-      Any content 1
-    </h2>
+    <div
+      class="react-tabs"
+      data-tabs="true"
+    >
+      <ul
+        class="react-tabs__tab-list"
+        role="tablist"
+      >
+        <li
+          aria-controls="react-tabs-1"
+          aria-disabled="false"
+          aria-selected="true"
+          class="react-tabs__tab react-tabs__tab--selected"
+          data-id="1"
+          data-test="tab-anchor"
+          id="react-tabs-0"
+          role="tab"
+          tabindex="0"
+        >
+           1
+          <button
+            data-test="tabRemove"
+          >
+             x 
+          </button>
+        </li>
+        <li
+          aria-controls="react-tabs-3"
+          aria-disabled="false"
+          aria-selected="false"
+          class="react-tabs__tab"
+          data-id="2"
+          data-test="tab-anchor"
+          id="react-tabs-2"
+          role="tab"
+        >
+           2
+          <button
+            data-test="tabRemove"
+          >
+             x 
+          </button>
+        </li>
+        <li
+          aria-controls="react-tabs-5"
+          aria-disabled="false"
+          aria-selected="false"
+          class="react-tabs__tab"
+          data-id="3"
+          data-test="tab-anchor"
+          id="react-tabs-4"
+          role="tab"
+        >
+           3
+          <button
+            data-test="tabRemove"
+          >
+             x 
+          </button>
+        </li>
+        <li
+          aria-controls="react-tabs-7"
+          aria-disabled="false"
+          aria-selected="false"
+          class="react-tabs__tab"
+          data-id="4"
+          data-test="tab-anchor"
+          id="react-tabs-6"
+          role="tab"
+        >
+           4
+          <button
+            data-test="tabRemove"
+          >
+             x 
+          </button>
+        </li>
+        <li
+          aria-controls="react-tabs-9"
+          aria-disabled="false"
+          aria-selected="false"
+          class="react-tabs__tab"
+          data-id="5"
+          data-test="tab-anchor"
+          id="react-tabs-8"
+          role="tab"
+        >
+           5
+          <button
+            data-test="tabRemove"
+          >
+             x 
+          </button>
+        </li>
+      </ul>
+      <div
+        aria-labelledby="react-tabs-0"
+        class="react-tabs__tab-panel react-tabs__tab-panel--selected"
+        data-id="1"
+        id="react-tabs-1"
+        role="tabpanel"
+      >
+        <h2>
+          some text1
+        </h2>
+      </div>
+      <div
+        aria-labelledby="react-tabs-2"
+        class="react-tabs__tab-panel"
+        data-id="2"
+        id="react-tabs-3"
+        role="tabpanel"
+      />
+      <div
+        aria-labelledby="react-tabs-4"
+        class="react-tabs__tab-panel"
+        data-id="3"
+        id="react-tabs-5"
+        role="tabpanel"
+      />
+      <div
+        aria-labelledby="react-tabs-6"
+        class="react-tabs__tab-panel"
+        data-id="4"
+        id="react-tabs-7"
+        role="tabpanel"
+      />
+      <div
+        aria-labelledby="react-tabs-8"
+        class="react-tabs__tab-panel"
+        data-id="5"
+        id="react-tabs-9"
+        role="tabpanel"
+      />
+    </div>
   </div>
-  <div
-    aria-labelledby="react-tabs-2"
-    class="react-tabs__tab-panel"
-    id="react-tabs-3"
-    role="tabpanel"
-  />
 </div>
 `;
 
 exports[`snapshot testing to toggle tab 2`] = `
-<div
-  class="react-tabs"
-  data-tabs="true"
->
-  <ul
-    class="react-tabs__tab-list"
-    role="tablist"
-  >
-    <li
-      aria-controls="react-tabs-1"
-      aria-disabled="false"
-      aria-selected="false"
-      class="react-tabs__tab"
-      data-test="tab-anchor"
-      id="react-tabs-0"
-      role="tab"
+<div>
+  <form>
+    <label
+      for="titleNewTab"
     >
-       1 
-    </li>
-    <li
-      aria-controls="react-tabs-3"
-      aria-disabled="false"
-      aria-selected="true"
-      class="react-tabs__tab react-tabs__tab--selected"
-      data-test="tab-anchor"
-      id="react-tabs-2"
-      role="tab"
-      tabindex="0"
+      enter the name of new tab  
+    </label>
+    <input
+      id="titleNewTab"
+      placeholder="name"
+      type="text"
+      value=""
+    />
+    <button
+      data-test="addTab"
+      type="submit"
     >
-       2 
-    </li>
-  </ul>
+      add Tab
+    </button>
+  </form>
   <div
-    aria-labelledby="react-tabs-0"
-    class="react-tabs__tab-panel"
-    id="react-tabs-1"
-    role="tabpanel"
-  />
-  <div
-    aria-labelledby="react-tabs-2"
-    class="react-tabs__tab-panel react-tabs__tab-panel--selected"
-    id="react-tabs-3"
-    role="tabpanel"
+    data-test="tabBox"
   >
-    <h2>
-      Any content 2
-    </h2>
+    <div
+      class="react-tabs"
+      data-tabs="true"
+    >
+      <ul
+        class="react-tabs__tab-list"
+        role="tablist"
+      >
+        <li
+          aria-controls="react-tabs-1"
+          aria-disabled="false"
+          aria-selected="false"
+          class="react-tabs__tab"
+          data-id="1"
+          data-test="tab-anchor"
+          id="react-tabs-0"
+          role="tab"
+        >
+           1
+          <button
+            data-test="tabRemove"
+          >
+             x 
+          </button>
+        </li>
+        <li
+          aria-controls="react-tabs-3"
+          aria-disabled="false"
+          aria-selected="true"
+          class="react-tabs__tab react-tabs__tab--selected"
+          data-id="2"
+          data-test="tab-anchor"
+          id="react-tabs-2"
+          role="tab"
+          tabindex="0"
+        >
+           2
+          <button
+            data-test="tabRemove"
+          >
+             x 
+          </button>
+        </li>
+        <li
+          aria-controls="react-tabs-5"
+          aria-disabled="false"
+          aria-selected="false"
+          class="react-tabs__tab"
+          data-id="3"
+          data-test="tab-anchor"
+          id="react-tabs-4"
+          role="tab"
+        >
+           3
+          <button
+            data-test="tabRemove"
+          >
+             x 
+          </button>
+        </li>
+        <li
+          aria-controls="react-tabs-7"
+          aria-disabled="false"
+          aria-selected="false"
+          class="react-tabs__tab"
+          data-id="4"
+          data-test="tab-anchor"
+          id="react-tabs-6"
+          role="tab"
+        >
+           4
+          <button
+            data-test="tabRemove"
+          >
+             x 
+          </button>
+        </li>
+        <li
+          aria-controls="react-tabs-9"
+          aria-disabled="false"
+          aria-selected="false"
+          class="react-tabs__tab"
+          data-id="5"
+          data-test="tab-anchor"
+          id="react-tabs-8"
+          role="tab"
+        >
+           5
+          <button
+            data-test="tabRemove"
+          >
+             x 
+          </button>
+        </li>
+      </ul>
+      <div
+        aria-labelledby="react-tabs-0"
+        class="react-tabs__tab-panel"
+        data-id="1"
+        id="react-tabs-1"
+        role="tabpanel"
+      />
+      <div
+        aria-labelledby="react-tabs-2"
+        class="react-tabs__tab-panel react-tabs__tab-panel--selected"
+        data-id="2"
+        id="react-tabs-3"
+        role="tabpanel"
+      >
+        <h2>
+          some text2
+        </h2>
+      </div>
+      <div
+        aria-labelledby="react-tabs-4"
+        class="react-tabs__tab-panel"
+        data-id="3"
+        id="react-tabs-5"
+        role="tabpanel"
+      />
+      <div
+        aria-labelledby="react-tabs-6"
+        class="react-tabs__tab-panel"
+        data-id="4"
+        id="react-tabs-7"
+        role="tabpanel"
+      />
+      <div
+        aria-labelledby="react-tabs-8"
+        class="react-tabs__tab-panel"
+        data-id="5"
+        id="react-tabs-9"
+        role="tabpanel"
+      />
+    </div>
   </div>
 </div>
 `;
