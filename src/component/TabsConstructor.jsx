@@ -12,7 +12,14 @@ const TabsConstructor = (props) => {
     <div data-test="tabBox">
       <Tabs>
         <TabList>
-          {tabs.map(({ textInput, id }) => <Tab data-test="tab-anchor" key={_.uniqueId()} data-id={id}> {textInput}<button onClick={onRemove(id)} data-test="tabRemove"> x </button></Tab>)}
+          {tabs.map(({ textInput, id }) => (
+            <Tab
+              data-test="tab-anchor"
+              key={_.uniqueId()}
+              data-id={id}>
+              {textInput}
+                <button onClick={onRemove(id)} data-test="tabRemove"> x </button>
+            </Tab>))}
         </TabList>
         {contents.map(({ content, id }) => (
           <TabPanel key={_.uniqueId()} data-id={id}>

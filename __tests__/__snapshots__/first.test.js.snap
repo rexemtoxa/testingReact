@@ -43,7 +43,7 @@ exports[`snapshot testing to toggle tab 1`] = `
           role="tab"
           tabindex="0"
         >
-           1
+          1
           <button
             data-test="tabRemove"
           >
@@ -60,7 +60,7 @@ exports[`snapshot testing to toggle tab 1`] = `
           id="react-tabs-2"
           role="tab"
         >
-           2
+          2
           <button
             data-test="tabRemove"
           >
@@ -77,7 +77,7 @@ exports[`snapshot testing to toggle tab 1`] = `
           id="react-tabs-4"
           role="tab"
         >
-           3
+          3
           <button
             data-test="tabRemove"
           >
@@ -94,7 +94,7 @@ exports[`snapshot testing to toggle tab 1`] = `
           id="react-tabs-6"
           role="tab"
         >
-           4
+          4
           <button
             data-test="tabRemove"
           >
@@ -111,7 +111,7 @@ exports[`snapshot testing to toggle tab 1`] = `
           id="react-tabs-8"
           role="tab"
         >
-           5
+          5
           <button
             data-test="tabRemove"
           >
@@ -205,7 +205,7 @@ exports[`snapshot testing to toggle tab 2`] = `
           id="react-tabs-0"
           role="tab"
         >
-           1
+          1
           <button
             data-test="tabRemove"
           >
@@ -223,7 +223,7 @@ exports[`snapshot testing to toggle tab 2`] = `
           role="tab"
           tabindex="0"
         >
-           2
+          2
           <button
             data-test="tabRemove"
           >
@@ -240,7 +240,7 @@ exports[`snapshot testing to toggle tab 2`] = `
           id="react-tabs-4"
           role="tab"
         >
-           3
+          3
           <button
             data-test="tabRemove"
           >
@@ -257,7 +257,7 @@ exports[`snapshot testing to toggle tab 2`] = `
           id="react-tabs-6"
           role="tab"
         >
-           4
+          4
           <button
             data-test="tabRemove"
           >
@@ -274,7 +274,7 @@ exports[`snapshot testing to toggle tab 2`] = `
           id="react-tabs-8"
           role="tab"
         >
-           5
+          5
           <button
             data-test="tabRemove"
           >
