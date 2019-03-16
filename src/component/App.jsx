@@ -1,6 +1,24 @@
 import React from 'react';
 import uniqid from 'uniqid';
+import Cookie from 'js-cookie';
 import TabsConstructor from './TabsConstructor';
+import debug from 'debug';
+
+const stateLogger = debug('setState:');
+export default context => {
+  const setState = context.setState;
+  context.setState = function(nextState, cb) {
+    stateLogger('Name: ', context.constructor.name);
+    stateLogger('Old state: ', context.state);
+    setState.apply(context, [
+      nextState,
+      () => {
+        if (typeof cb === 'function') cb();
+        stateLogger('New state: ', context.state);
+      },
+    ]);
+  };
+};
 
 export default class App extends React.Component {
   constructor(props) {
@@ -20,6 +38,7 @@ export default class App extends React.Component {
         { content: 'some text5', id: 5 },
       ],
       textInput: '',
+      activeTabIndex: +Cookie.get('activeTabIndex') || 0,
     };
   }
 
@@ -46,10 +65,14 @@ export default class App extends React.Component {
     });
   }
 
+  selectTab = (activeTabIndex) => {
+    this.setState({ activeTabIndex });
+    Cookie.set('activeTabIndex', activeTabIndex);
+  };
 
   render() {
     const {
-      tabs, contents, textInput,
+      tabs, contents, textInput, activeTabIndex,
     } = this.state;
     return (
       <div>
@@ -66,9 +89,14 @@ export default class App extends React.Component {
           />
           <button type='submit' data-test='addTab'>add Tab</button>
           </form>
-          <TabsConstructor tabs={tabs} contents={contents} onRemove={this.onRemove}/>
+          <TabsConstructor
+            tabs={tabs}
+            contents={contents}
+            onRemove={this.onRemove}
+            activeTabIndex={activeTabIndex}
+            selectTab={this.selectTab}
+          />
       </div>
-
     );
   }
 }

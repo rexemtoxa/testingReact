@@ -21,14 +21,13 @@
   },
   "homepage": "https://github.com/rexemtoxa/testingReact#readme",
   "dependencies": {
-    "enzyme": "*",
-    "enzyme-adapter-react-16": "*",
+    "debug": "^4.1.1",
+    "js-cookie": "^2.2.0",
     "lodash": "^4.17.11",
     "react": "^16.8.3",
     "react-dom": "^16.8.3",
     "react-tabs": "^3.0.0",
-    "uniqid": "^5.0.3",
-    "debug": "^4.1.1"
+    "uniqid": "^5.0.3"
   },
   "devDependencies": {
     "@babel/cli": "^7.1.2",

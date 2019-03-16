@@ -27,16 +27,6 @@ test('snapshot testing to toggle tab', () => {
   expect(wrapper.render()).toMatchSnapshot();
 });
 
-test('toggle tab', () => {
-  const wrapper = mount(<App />);
-  const page = getPage(wrapper);
-  const firstTab = page.getTabsNth(0);
-  const secondTab = page.getTabsNth(1);
-
-  expect(firstTab).toHaveClassName('react-tabs__tab react-tabs__tab--selected');
-  expect(secondTab).not.toHaveClassName('react-tabs__tab--selected');
-});
-
 test('toggle tab 2', () => {
   const wrapper = mount(<App />);
   const page = getPage(wrapper);
@@ -45,8 +35,8 @@ test('toggle tab 2', () => {
   const secondTab = page.getTabsNth(1);
   secondTab.simulate('click');
 
-  expect(secondTab).toHaveClassName('react-tabs__tab react-tabs__tab--selected');
-  expect(firstTab).not.toHaveClassName('react-tabs__tab--selected');
+  expect(secondTab).toHaveProp('aria-selected', 'true');
+  expect(firstTab).toHaveProp('aria-selected', 'false');
 });
 
 test('add new rab', () => {
@@ -61,12 +51,12 @@ test('add new rab', () => {
   expect(tabsAfterUpdate).toContainMatchingElements(6, selectors.tabs);
 });
 
-it('remove tab', () => {
+test('remove tab', () => {
   const wrapper = mount(<App />);
   const page = getPage(wrapper);
   const tabsBeforeUpdate = page.getTabsBox();
   expect(tabsBeforeUpdate).toContainMatchingElements(5, selectors.tabs);
-
+  debugger;
   const tabRemoveButtons = page.getRemoveTabBtn();
   tabRemoveButtons.last().simulate('click');
   const tabsAfterUpdate = page.getTabsBox();

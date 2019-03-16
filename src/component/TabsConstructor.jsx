@@ -7,10 +7,12 @@ import _ from 'lodash';
 
 
 const TabsConstructor = (props) => {
-  const { tabs, contents, onRemove } = props;
+  const {
+    tabs, contents, onRemove, activeTabIndex, selectTab,
+  } = props;
   return (
     <div data-test="tabBox">
-      <Tabs>
+      <Tabs selectedIndex={activeTabIndex} onSelect={tabIndex => selectTab(tabIndex)}>
         <TabList>
           {tabs.map(({ textInput, id }) => (
             <Tab
