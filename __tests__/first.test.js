@@ -2,7 +2,6 @@ import React from 'react';
 import { mount } from 'enzyme';
 import App from '../src/component/App';
 
-
 const selectors = {
   tabsBox: 'div[data-test="tabBox"]',
   addTabBtn: 'button[data-test="addTab"]',
@@ -56,7 +55,6 @@ test('remove tab', () => {
   const page = getPage(wrapper);
   const tabsBeforeUpdate = page.getTabsBox();
   expect(tabsBeforeUpdate).toContainMatchingElements(5, selectors.tabs);
-  debugger;
   const tabRemoveButtons = page.getRemoveTabBtn();
   tabRemoveButtons.last().simulate('click');
   const tabsAfterUpdate = page.getTabsBox();

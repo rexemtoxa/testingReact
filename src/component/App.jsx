@@ -2,23 +2,6 @@ import React from 'react';
 import uniqid from 'uniqid';
 import Cookie from 'js-cookie';
 import TabsConstructor from './TabsConstructor';
-import debug from 'debug';
-
-const stateLogger = debug('setState:');
-export default context => {
-  const setState = context.setState;
-  context.setState = function(nextState, cb) {
-    stateLogger('Name: ', context.constructor.name);
-    stateLogger('Old state: ', context.state);
-    setState.apply(context, [
-      nextState,
-      () => {
-        if (typeof cb === 'function') cb();
-        stateLogger('New state: ', context.state);
-      },
-    ]);
-  };
-};
 
 export default class App extends React.Component {
   constructor(props) {
